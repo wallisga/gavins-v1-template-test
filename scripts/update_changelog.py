@@ -4,6 +4,7 @@ import re
 import logging
 from pathlib import Path
 import tomllib
+import sys
 
 # --- Logging Setup ---
 log_path = Path(__file__).resolve().parent.parent / "logs" / "setup.log"
@@ -24,13 +25,26 @@ SECTION_MAP = {
 
 def get_current_version():
     try:
-        with open("pyproject.toml", "rb") as f:
+        root_dir = Path(__file__).resolve().parent.parent
+        pyproject_path = root_dir / "pyproject.toml"
+
+        with open(pyproject_path, "rb") as f:
             data = tomllib.load(f)
-        version = data["project"]["version"]
-        logging.info(f"Detected current version: {version}")
-        return version
+
+        project_name = data["project"]["name"]
+        version_file = root_dir / "src" / project_name / "__version__.py"
+
+        with open(version_file, "r") as f:
+            for line in f:
+                if line.startswith("__version__"):
+                    version = line.split("=")[1].strip().strip('"\'')
+                    logging.info(f"Detected current version {version} from {version_file}")
+                    return version
+
+        raise ValueError(f"__version__ not found in {version_file}")
+
     except Exception as e:
-        logging.error(f"Failed to read version: {e}")
+        logging.error(f"Failed to retrieve version: {e}")
         raise
 
 def get_recent_commits():
@@ -78,7 +92,8 @@ def collect_existing_entries(changelog_lines, version):
     return existing
 
 def update_changelog(version, commits):
-    changelog_path = Path("changelog.md")
+    root_dir = Path(__file__).resolve().parent.parent
+    changelog_path = root_dir / "CHANGELOG.md"
     changelog_lines = changelog_path.read_text().splitlines(keepends=True) if changelog_path.exists() else []
 
     changelog_lines = ensure_changelog_sections(changelog_lines, version)
@@ -122,12 +137,25 @@ def update_changelog(version, commits):
     logging.info(f"Updated changelog for version {version}.")
     print(f"[✓] Changelog updated for version {version}")
 
+
+def commit_changelog(version):
+    try:
+        subprocess.run(["git", "add", "CHANGELOG.md"], check=True)
+        subprocess.run(["git", "commit", "-m", f"chore: update changelog for v{version}"], check=True)
+        logging.info("Committed changelog.")
+        print(f"[✓] Committed changelog for version {version}")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Git commit failed: {e}")
+        print("❌ Git commit failed.")
+        sys.exit(1)    
+
 if __name__ == "__main__":
     try:
         version = get_current_version()
         commits = get_recent_commits()
         if commits:
             update_changelog(version, commits)
+            commit_changelog(version)
         else:
             print("[i] No new commits to add to changelog.")
     except Exception as e:

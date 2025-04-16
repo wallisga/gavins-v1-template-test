@@ -212,3 +212,31 @@ branch 'main' set up to track 'origin/main'.
 2025-04-16 02:29:56 | 🧹 Removing backup .git directory...
 2025-04-16 02:29:56 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
 2025-04-16 02:29:56 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
+2025-04-16 02:40:47,559 - INFO - Starting commit validation.
+2025-04-16 02:40:47,562 - INFO - Fetched unpushed commits.
+2025-04-16 02:40:47,562 - WARNING - ❌ Invalid scope 'module' in: feat(module): New module added with some_func() to say hello to the world. (allowed: general)
+2025-04-16 02:40:47,562 - WARNING - Commit validation failed.
+2025-04-16 02:45:12,993 - INFO - Starting commit validation.
+2025-04-16 02:45:12,996 - INFO - Fetched unpushed commits.
+2025-04-16 02:45:12,996 - WARNING - ❌ Invalid scope 'module' in: feat(module): New module added with some_func() to say hello to the world. (allowed: general)
+2025-04-16 02:45:12,996 - WARNING - Commit validation failed.
+2025-04-16 02:47:04,935 - INFO - Starting commit validation.
+2025-04-16 02:47:04,937 - INFO - Fetched unpushed commits.
+2025-04-16 02:47:04,937 - INFO - All commit messages passed validation.
+2025-04-16 02:47:04,983 - ERROR - Failed to read version: [Errno 2] No such file or directory: 'pyproject.toml'
+2025-04-16 02:47:04,983 - ERROR - Failed to update changelog.
+Traceback (most recent call last):
+  File "/home/test/code/gavins-v1-template-test/scripts/update_changelog.py", line 127, in <module>
+    version = get_current_version()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/code/gavins-v1-template-test/scripts/update_changelog.py", line 27, in get_current_version
+    with open("pyproject.toml", "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'pyproject.toml'
+2025-04-16 02:54:16,411 - INFO - Starting commit validation.
+2025-04-16 02:54:16,413 - INFO - Fetched unpushed commits.
+2025-04-16 02:54:16,414 - INFO - All commit messages passed validation.
+2025-04-16 02:54:16,454 - INFO - Detected current version 0.0.0 from /home/test/code/gavins-v1-template-test/src/gavins-v1-template/__version__.py
+2025-04-16 02:54:16,457 - INFO - Retrieved recent commits for changelog.
+2025-04-16 02:54:16,457 - INFO - Inserted new section headers for version 0.0.0.
+2025-04-16 02:54:16,457 - INFO - Updated changelog for version 0.0.0.

@@ -17,9 +17,9 @@ logging.basicConfig(
 
 # --- Constants ---
 VALID_TYPES = {"feat", "fix", "docs", "chore"}
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = PROJECT_ROOT / "src"
-VALID_SCOPES = {p.stem for p in SRC_DIR.glob("*.py") if p.stem != "__init__"}
+VALID_SCOPES = {p.stem for p in SRC_DIR.rglob("*.py") if p.stem != "__init__"}
 VALID_SCOPES.add("general")
 COMMIT_RE = re.compile(r"^(feat|fix|docs|chore)\(([\w\-]+)\): .+")
 
