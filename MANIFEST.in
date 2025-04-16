@@ -1,0 +1,9 @@
+# Inclusions
+graft src
+graft tests
+
+# Exclusions
+global-exclude *.py[co]
+exclude dist/*
+exclude .gitignore
+exclude build/*

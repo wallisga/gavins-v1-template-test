@@ -1,0 +1,187 @@
+2025-04-16 01:33:14 | 🔍 Verifying environment...
+2025-04-16 01:33:14 | 🔍 Verifying environment...
+2025-04-16 01:33:14 | ❌ 'python' is required but not installed.
+2025-04-16 01:33:14 | ❌ 'python' is required but not installed.
+2025-04-16 01:33:35 | 🔍 Verifying environment...
+2025-04-16 01:33:35 | 🔍 Verifying environment...
+2025-04-16 01:33:35 | ❌ 'python' is required but not installed.
+2025-04-16 01:33:35 | ❌ 'python' is required but not installed.
+2025-04-16 02:21:48 | 🔍 Verifying environment...
+2025-04-16 02:21:48 | 🔍 Verifying environment...
+2025-04-16 02:21:48 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+2025-04-16 02:21:48 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+Enter your GitHub username: Enter your GitHub personal access token: 
+2025-04-16 02:21:52 | 🔑 Validating GitHub token...
+2025-04-16 02:21:52 | 🔑 Validating GitHub token...
+2025-04-16 02:21:52 | 📡 Creating GitHub repository...
+2025-04-16 02:21:52 | 📡 Creating GitHub repository...
+✅ Repository created successfully: https://github.com/wallisga/gavins-v1-template-test7
+2025-04-16 02:21:53 | 📁 Initializing new Git repository...
+2025-04-16 02:21:53 | 📁 Initializing new Git repository...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/test/code/gavins-v1-template-test7/.git/
+[main (root-commit) 444c3c8] Initial commit
+ 16 files changed, 672 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 CHANGELOG.md
+ create mode 100644 LICENSE
+ create mode 100644 MANIFEST.in
+ create mode 100644 README.md
+ create mode 100644 logs/setup.log
+ create mode 100644 pyproject.toml
+ create mode 100644 scripts/build-and-release.sh
+ create mode 100644 scripts/create_github_repo.py
+ create mode 100644 scripts/git-safe-push.sh
+ create mode 100644 scripts/release_changelog.py
+ create mode 100644 scripts/setup.sh
+ create mode 100644 scripts/update_changelog.py
+ create mode 100644 scripts/validate_commits.py
+ create mode 100644 src/gavins-v1-template/__init__.py
+ create mode 100644 src/gavins-v1-template/__version__.py
+2025-04-16 02:21:53 | 🚀 Pushing code to GitHub...
+2025-04-16 02:21:53 | 🚀 Pushing code to GitHub...
+To github.com:wallisga/gavins-v1-template-test7.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+2025-04-16 02:21:54 | 🧹 Removing backup .git directory...
+2025-04-16 02:21:54 | 🧹 Removing backup .git directory...
+2025-04-16 02:21:54 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test7.git
+2025-04-16 02:21:54 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test7.git
+2025-04-16 02:26:32 | 🔍 Verifying environment...
+2025-04-16 02:26:32 | 🔍 Verifying environment...
+2025-04-16 02:26:33 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+2025-04-16 02:26:33 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+Enter your GitHub username: Enter your GitHub personal access token: 
+2025-04-16 02:26:41 | 🔑 Validating GitHub token...
+2025-04-16 02:26:41 | 🔑 Validating GitHub token...
+2025-04-16 02:26:41 | 📡 Creating GitHub repository...
+2025-04-16 02:26:41 | 📡 Creating GitHub repository...
+✅ Repository created successfully: https://github.com/wallisga/gavins-v1-template-test
+2025-04-16 02:26:42 | ⚠️ Detected existing Git repository.
+2025-04-16 02:26:42 | ⚠️ Detected existing Git repository.
+Do you want to replace the existing Git repo with a fresh one? [y/N]: 2025-04-16 02:26:51 | 💾 Backing up current .git directory...
+2025-04-16 02:26:51 | 💾 Backing up current .git directory...
+2025-04-16 02:26:51 | 📁 Initializing new Git repository...
+2025-04-16 02:26:51 | 📁 Initializing new Git repository...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/test/code/gavins-v1-template-test/.git/
+[main (root-commit) 04316b7] Initial commit
+ 62 files changed, 1551 insertions(+)
+ create mode 100644 .git.bak/COMMIT_EDITMSG
+ create mode 100644 .git.bak/HEAD
+ create mode 100644 .git.bak/config
+ create mode 100644 .git.bak/description
+ create mode 100755 .git.bak/hooks/applypatch-msg.sample
+ create mode 100755 .git.bak/hooks/commit-msg.sample
+ create mode 100755 .git.bak/hooks/fsmonitor-watchman.sample
+ create mode 100755 .git.bak/hooks/post-update.sample
+ create mode 100755 .git.bak/hooks/pre-applypatch.sample
+ create mode 100755 .git.bak/hooks/pre-commit.sample
+ create mode 100755 .git.bak/hooks/pre-merge-commit.sample
+ create mode 100755 .git.bak/hooks/pre-push.sample
+ create mode 100755 .git.bak/hooks/pre-rebase.sample
+ create mode 100755 .git.bak/hooks/pre-receive.sample
+ create mode 100755 .git.bak/hooks/prepare-commit-msg.sample
+ create mode 100755 .git.bak/hooks/push-to-checkout.sample
+ create mode 100755 .git.bak/hooks/update.sample
+ create mode 100644 .git.bak/index
+ create mode 100644 .git.bak/info/exclude
+ create mode 100644 .git.bak/logs/HEAD
+ create mode 100644 .git.bak/logs/refs/heads/main
+ create mode 100644 .git.bak/logs/refs/remotes/origin/main
+ create mode 100644 .git.bak/objects/06/711c32541f190e4fe4d0fa2b55c64e1aff595f
+ create mode 100644 .git.bak/objects/09/cae787741a4579a4d9369389610cdfcddeef63
+ create mode 100644 .git.bak/objects/12/838d051f68fc3cff8b57e73cbc7991dc67eb0b
+ create mode 100644 .git.bak/objects/34/c93437bd4a1b816f30980319f63e56b5c94a80
+ create mode 100644 .git.bak/objects/39/2db376b8e496226f8e64996a4a305b6223ffdb
+ create mode 100644 .git.bak/objects/3a/a0d7b3c4a82ed4ae8d4ffa80115156f9785f46
+ create mode 100644 .git.bak/objects/44/4c3c842ec39779c894a7e264fc746ffc28f40d
+ create mode 100644 .git.bak/objects/54/2abb01d0957b4b2aedf779979a00b5cad0829d
+ create mode 100644 .git.bak/objects/75/72b9ad3fa256e694eb515ac601e6212358bb72
+ create mode 100644 .git.bak/objects/7e/299e4cc7ce9d7f100e8a109f464db7b6aff98e
+ create mode 100644 .git.bak/objects/82/79654eb5ae79a30b837ae7a424b7ab572752c5
+ create mode 100644 .git.bak/objects/8f/d2b0e617bde31aac1355d43fec771b7ff940e6
+ create mode 100644 .git.bak/objects/91/3b0c412cba28d743c8e186d57443f9875a9867
+ create mode 100644 .git.bak/objects/ba/487577603076b0b8ef62bf6f9e08ef22dfcc1c
+ create mode 100644 .git.bak/objects/c1/1e38b628def0df0e465eeeaa0389d75b4b1d25
+ create mode 100644 .git.bak/objects/c6/36b03857849b62d9c828acb3e0c92c0eb0fd54
+ create mode 100644 .git.bak/objects/c7/8ca2294e5d50b69488e421e3c09d4e86e25153
+ create mode 100644 .git.bak/objects/d6/cda1f9aaebd9323f1b26e6d1a81dd7ff3a3f3b
+ create mode 100644 .git.bak/objects/dd/aadcf17e572e48b361370d3e3928991219d21d
+ create mode 100644 .git.bak/objects/e1/e2b3dca66f5a7280a8c2e7d53df8d5d52391aa
+ create mode 100644 .git.bak/objects/e2/d6365969c62c538908c13d6f287be1ac507458
+ create mode 100644 .git.bak/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+ create mode 100644 .git.bak/refs/heads/main
+ create mode 100644 .git.bak/refs/remotes/origin/main
+ create mode 100644 .gitignore
+ create mode 100644 CHANGELOG.md
+ create mode 100644 LICENSE
+ create mode 100644 MANIFEST.in
+ create mode 100644 README.md
+ create mode 100644 logs/setup.log
+ create mode 100644 pyproject.toml
+ create mode 100644 scripts/build-and-release.sh
+ create mode 100644 scripts/create_github_repo.py
+ create mode 100644 scripts/git-safe-push.sh
+ create mode 100644 scripts/release_changelog.py
+ create mode 100644 scripts/setup.sh
+ create mode 100644 scripts/update_changelog.py
+ create mode 100644 scripts/validate_commits.py
+ create mode 100644 src/gavins-v1-template/__init__.py
+ create mode 100644 src/gavins-v1-template/__version__.py
+2025-04-16 02:26:51 | 🚀 Pushing code to GitHub...
+2025-04-16 02:26:51 | 🚀 Pushing code to GitHub...
+To github.com:wallisga/gavins-v1-template-test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+2025-04-16 02:26:52 | 🧹 Removing backup .git directory...
+2025-04-16 02:26:52 | 🧹 Removing backup .git directory...
+2025-04-16 02:26:52 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
+2025-04-16 02:26:52 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
+2025-04-16 02:29:43 | 🔍 Verifying environment...
+2025-04-16 02:29:43 | 🔍 Verifying environment...
+2025-04-16 02:29:43 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+2025-04-16 02:29:43 | Git author name and email set to: Gavin Wallis <gwallis.msu@gmail.com>
+Enter your GitHub username: Enter your GitHub personal access token: 
+2025-04-16 02:29:51 | 🔑 Validating GitHub token...
+2025-04-16 02:29:51 | 🔑 Validating GitHub token...
+2025-04-16 02:29:51 | 📡 Creating GitHub repository...
+2025-04-16 02:29:51 | 📡 Creating GitHub repository...
+✅ Repository created successfully: https://github.com/wallisga/gavins-v1-template-test
+2025-04-16 02:29:52 | ⚠️ Detected existing Git repository.
+2025-04-16 02:29:52 | ⚠️ Detected existing Git repository.
+2025-04-16 02:29:52 | 🔗 Testing existing remote connection...
+2025-04-16 02:29:52 | 🔗 Testing existing remote connection...
+Do you want to replace the existing Git repo with a fresh one? [y/N]: 2025-04-16 02:29:55 | 💾 Backing up current .git directory...
+2025-04-16 02:29:55 | 💾 Backing up current .git directory...
+2025-04-16 02:29:55 | 📁 Initializing new Git repository...
+2025-04-16 02:29:55 | 📁 Initializing new Git repository...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/test/code/gavins-v1-template-test/.git/

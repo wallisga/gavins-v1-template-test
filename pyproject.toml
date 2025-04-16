@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gavins-v1-template"
+dynamic = ["version"]
+description = "A standardized Python project template with commit validation, changelog automation, and packaging best practices."
+authors = [
+  { name="Gavin Wallis", email="gwallis.msu@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = ["requests"]
+
+[project.urls]
+Homepage = "https://github.com/wallisga/gavins-v1-template"
+Issues = "https://github.com/wallisga/gavins-v1-template/issues"
+
+[tool.hatch.version]
+path = "src/gavins_template/__version__.py"
