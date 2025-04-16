@@ -185,3 +185,30 @@ hint: 'development'. The just-created branch can be renamed via this command:
 hint: 
 hint: 	git branch -m <name>
 Initialized empty Git repository in /home/test/code/gavins-v1-template-test/.git/
+[main (root-commit) aecfd21] Initial commit
+ 16 files changed, 829 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 CHANGELOG.md
+ create mode 100644 LICENSE
+ create mode 100644 MANIFEST.in
+ create mode 100644 README.md
+ create mode 100644 logs/setup.log
+ create mode 100644 pyproject.toml
+ create mode 100644 scripts/build-and-release.sh
+ create mode 100644 scripts/create_github_repo.py
+ create mode 100644 scripts/git-safe-push.sh
+ create mode 100644 scripts/release_changelog.py
+ create mode 100644 scripts/setup.sh
+ create mode 100644 scripts/update_changelog.py
+ create mode 100644 scripts/validate_commits.py
+ create mode 100644 src/gavins-v1-template/__init__.py
+ create mode 100644 src/gavins-v1-template/__version__.py
+2025-04-16 02:29:55 | 🚀 Pushing code to GitHub...
+2025-04-16 02:29:55 | 🚀 Pushing code to GitHub...
+To github.com:wallisga/gavins-v1-template-test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+2025-04-16 02:29:56 | 🧹 Removing backup .git directory...
+2025-04-16 02:29:56 | 🧹 Removing backup .git directory...
+2025-04-16 02:29:56 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
+2025-04-16 02:29:56 | ✅ Setup complete. Repo available at: git@github.com:wallisga/gavins-v1-template-test.git
