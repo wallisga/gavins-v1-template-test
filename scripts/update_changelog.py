@@ -140,14 +140,14 @@ def update_changelog(version, commits):
 
 def commit_changelog(version):
     try:
-        subprocess.run(["git", "add", "CHANGELOG.md"], check=True)
+        subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", f"chore: update changelog for v{version}"], check=True)
         logging.info("Committed changelog.")
         print(f"[✓] Committed changelog for version {version}")
     except subprocess.CalledProcessError as e:
         logging.error(f"Git commit failed: {e}")
         print("❌ Git commit failed.")
-        sys.exit(1)    
+        sys.exit(1)
 
 if __name__ == "__main__":
     try:
